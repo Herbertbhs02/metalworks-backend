@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- import css file -->
+     <link rel="stylesheet" href="/css/styles.css">
+
+    <title>admin</title>
+</head>
+<body>
+     <img src="<%=message%>"" alt = 'loadedPhoto'>
+     <p>Photo resized and uploaded</p>
+    <h2>Fill in the form below and click on Upload <button disabled="disabled"></button></h2>
+    <form action="/" method="post">
+        <input type="hidden" name="link" value ="<%=message%>" />
+        <label for="product">Product:</label><br>
+        <input type="text" name="product"><br>
+        <label for="product">Work Category:</label><br>
+        <select name="category" id='category'>
+            <option value="doors">Doors&Windows</option>
+            <option value="gate">Gate</option>
+            <option value="Welding">Welding</option> 
+            <option value="showcase">Showcase</option> 
+            <option value="bumbers">Bumbers</option> 
+          </select><br>
+          
+        <label for="product">Description: </label><br>
+        <textarea rows="3" cols="50" maxlength="170" name="description"></textarea><br>
+         <input type="submit" name="button" value="Upload">  
+      </form> 
+
+
+      
+</body>
+</html>
